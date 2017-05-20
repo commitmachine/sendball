@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Sendball</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+.header {
+  padding: 4px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+  border-bottom: 2px solid #4caf86;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+          box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.bookings {
+  padding: 4px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+  border-bottom: 2px solid #ff9074;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+          box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.notice {
+    padding: 15px;
+    padding-bottom: 5px;
+    padding-top: 6px;
+    background-color: #fafafa;
+    border-left: 2px solid #7f7f84;
+    margin-bottom: 8px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.button {
+    background-color: #4caf86;
+    border: none;
+    color: white;
+    padding: 3px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    cursor:hand;
+}
+
+.button-cancel{
+  background-color: #f5714f;
+}
+.button-cancel-disabled{
+  background-color: #454545;
+}
+.div-left{
+  font-family: 'Roboto', sans-serif;
+  margin-top: 4px;
+  float:left;
+}
+.div-right{
+  float:right;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+
+  <div class="container">
+      {% if userbookings %}
+        <div class="bookings">Bookings</div>
+      {% endif %}
+      {% for b in userbookings %}
+      <div class="notice">
+        <div class="div-left">{{ b['datetime'] }} Bana {{ b['lane'] }}</div>
+        {% if b['bookid'] %}
+        <div class="div-right"><a href="/debook/{{ b['nick'] }}/{{ b['bookid'] }}"><button type="button" class="button button-cancel">Fuck it!</button></a></div>
+        {% else %}
+        <button type="button" class="button button-cancel-disabled" disabled>Debook not avaliable yet</button></a></div>
+        {% endif %}
+        <div class="spacer" style="clear: both;"></div>
+      </div>
+      {% endfor %}
+      {% for b in booking %}
+        {% if b['header'] %}
+          <div class="header">{{ b['header'] }}</div>
+        {% endif %}
+      <div class="notice">
+        <div class="div-left">{{ b['line'] }}</div>
+        <div class="div-right"><a href="{{ b['link'] }}"><button type="button" class="button">Book</button></a></div>
+        <div class="spacer" style="clear: both;"></div>
+      </div>
+      {% endfor %}
+  </div>
+
+</body>
+</html>
