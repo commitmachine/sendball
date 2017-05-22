@@ -8,7 +8,7 @@ from threading import Lock, Thread
 from flask import Flask, request, Response, render_template
 from multiprocessing import Queue
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-#from pyvirtualdisplay import Display
+from pyvirtualdisplay import Display
 
 current_avaliable_bookings = defaultdict(list)
 last_bookings_update = None
@@ -17,11 +17,11 @@ userbookings = defaultdict(list)
 users = []
 users.append({'nick':'rick', 'username':'rjavelind@gmail.com', 'password':'tomte123'})
 
-#display = Display(visible=0, size=(800, 600))
-#display.start()
+display = Display(visible=0, size=(800, 600))
+display.start()
 
 binary = FirefoxBinary('/usr/bin/firefox')
-driver = webdriver.Firefox()
+driver = webdriver.Firefox(firefox_binary=binary)
 
 wait = ui.WebDriverWait(driver,20)
 
@@ -81,7 +81,7 @@ def refresh_bookings():
 
 def send_book(nick, booking):
     userinfo = [x for x in users if x['nick'] == nick][0]
-    loggedin_driver = webdriver.Firefox()
+    loggedin_driver = webdriver.Firefox(firefox_binary=binary)
     loggedin_wait = ui.WebDriverWait(driver,20)
     loggedin_driver.get('https://v7003-profitwebsite.pastelldata.com/Start.aspx?GUID=1538&ISIFRAME=0&UNIT=1538&PAGE=LOKALBOKNING')
     loggedin_wait.until(lambda driver: loggedin_driver.find_element_by_xpath('//*[@id="SiteNavigationWUC_SITENAVIGATION_LOGIN"]'))
@@ -112,8 +112,7 @@ def get_user_bookings():
         bookid = 0
         new_user_bookings = []
         for user in users:
-            binary = FirefoxBinary('/usr/bin/firefox')
-            user_driver = webdriver.Firefox()
+            user_driver = webdriver.Firefox(firefox_binary=binary)
             user_wait = ui.WebDriverWait(user_driver,10)
             user_driver.get('https://v7003-profitwebsite.pastelldata.com/Start.aspx?GUID=1538&ISIFRAME=0&UNIT=1538&PAGE=LOKALBOKNING')
             user_driver.find_element_by_xpath('//*[@id="SiteNavigationWUC_SITENAVIGATION_LOGIN"]').click()
@@ -146,7 +145,7 @@ def debook_booking(nick, bookid):
     global userbookings
     userinfo = [x for x in users if x['nick'] == nick][0]
     booking = [x for x in userbookings if x['bookid'] == bookid][0]
-    user_driver = webdriver.Firefox()
+    user_driver = webdriver.Firefox(firefox_binary=binary)
     user_wait = ui.WebDriverWait(driver,5)
     user_driver.get('https://v7003-profitwebsite.pastelldata.com/Start.aspx?GUID=1538&ISIFRAME=0&UNIT=1538&PAGE=LOKALBOKNING')
     user_driver.find_element_by_xpath('//*[@id="SiteNavigationWUC_SITENAVIGATION_LOGIN"]').click()
