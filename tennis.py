@@ -7,6 +7,8 @@ from selenium.webdriver.common.keys import Keys
 from threading import Lock, Thread
 from flask import Flask, request, Response, render_template
 from multiprocessing import Queue
+from pyvirtualdisplay import Display
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 current_avaliable_bookings = defaultdict(list)
 last_bookings_update = None
@@ -16,8 +18,13 @@ userbookings = defaultdict(list)
 users = []
 users.append({'nick':'rick', 'username':'rjavelind@gmail.com', 'password':'tomte123'})
 
-driver = webdriver.Chrome()
-wait = ui.WebDriverWait(driver,10)
+display = Display(visible=0, size=(800, 600))
+display.start()
+
+binary = FirefoxBinary('/usr/bin/firefox')
+driver = webdriver.Firefox(firefox_binary=binary)
+
+wait = ui.WebDriverWait(driver,20)
 
 def get_lane_name_by_id(laneID):
     if int(laneID) > 80:
@@ -78,8 +85,11 @@ def refresh_bookings():
 
 def send_book(nick, booking):
     userinfo = [x for x in users if x['nick'] == nick][0]
-    loggedin_driver = webdriver.Chrome()
+    loggedin_driver = webdriver.Firefox(firefox_binary=binary)
+    loggedin_wait = ui.WebDriverWait(driver,20)
     loggedin_driver.get('https://v7003-profitwebsite.pastelldata.com/Start.aspx?GUID=1538&ISIFRAME=0&UNIT=1538&PAGE=LOKALBOKNING')
+    loggedin_wait.until(lambda driver: loggedin_driver.find_element_by_xpath('//*[@id="SiteNavigationWUC_SITENAVIGATION_LOGIN"]'))
+
     loggedin_driver.find_element_by_xpath('//*[@id="SiteNavigationWUC_SITENAVIGATION_LOGIN"]').click()
     loggedin_driver.find_element_by_xpath('//*[@id="ContentPlaceHolder1_LoginView1_Login1_UserName"]').send_keys(userinfo['username'])
     loggedin_driver.find_element_by_xpath('//*[@id="ContentPlaceHolder1_LoginView1_Login1_Password"]').send_keys(userinfo['password'])
@@ -91,7 +101,6 @@ def send_book(nick, booking):
     time.sleep(0.2)
     loggedin_driver.get(url)
     loggedin_driver.find_element_by_xpath('/html/body/div/a').click()
-    loggedin_wait = ui.WebDriverWait(driver,20)
     try:
         loggedin_wait.until(lambda driver: loggedin_driver.find_element_by_xpath('//*[@id="customerBookingDoneDialog"]'))
         user_bookings.append({'nick':userinfo['nick'], 'datetime':booking['param_DATEHR'], 'lane':lane, 'link':None, 'bookid':None})
@@ -107,15 +116,17 @@ def get_user_bookings():
         bookid = 0
         new_user_bookings = []
         for user in users:
-            user_driver = webdriver.Chrome()
-            user_wait = ui.WebDriverWait(driver,4)
+	    binary = FirefoxBinary('/usr/bin/firefox')
+            user_driver = webdriver.Firefox(firefox_binary=binary)
+            user_wait = ui.WebDriverWait(user_driver,10)
             user_driver.get('https://v7003-profitwebsite.pastelldata.com/Start.aspx?GUID=1538&ISIFRAME=0&UNIT=1538&PAGE=LOKALBOKNING')
             user_driver.find_element_by_xpath('//*[@id="SiteNavigationWUC_SITENAVIGATION_LOGIN"]').click()
+            user_wait.until(lambda user_driver: user_driver.find_element_by_xpath('//*[@id="ContentPlaceHolder1_LoginView1_Login1_UserName"]'))
             user_driver.find_element_by_xpath('//*[@id="ContentPlaceHolder1_LoginView1_Login1_UserName"]').send_keys(user['username'])
             user_driver.find_element_by_xpath('//*[@id="ContentPlaceHolder1_LoginView1_Login1_Password"]').send_keys(user['password'])
             user_driver.find_element_by_xpath('//*[@id="ContentPlaceHolder1_LoginView1_Login1_LoginButton"]').click()
-            time.sleep(2)
-            user_wait.until(lambda driver: user_driver.find_element_by_xpath('//*[@id="SiteNavigationWUC_SITENAVIGATION_BOOKINGS"]')).click()
+            user_wait.until(lambda user_driver: user_driver.find_element_by_xpath('//*[@id="SiteNavigationWUC_SITENAVIGATION_BOOKINGS"]')).click()
+	    user_wait.until(lambda user_driver: user_driver.find_element_by_xpath('//*[@id="ContentPlaceHolder1_RadioButtonBookings"]'))
             cancel_links = user_driver.find_elements_by_xpath('//td[@class="ResBookingsTableCellDebookAllowed"]')
             for link in cancel_links:
                 url = link.find_element_by_xpath('a').get_attribute('href')
@@ -136,7 +147,7 @@ def debook_booking(nick, bookid):
     global userbookings
     userinfo = [x for x in users if x['nick'] == nick][0]
     booking = [x for x in userbookings if x['bookid'] == bookid][0]
-    user_driver = webdriver.Chrome()
+    user_driver = webdriver.Firefox(firefox_binary=binary)
     user_wait = ui.WebDriverWait(driver,5)
     user_driver.get('https://v7003-profitwebsite.pastelldata.com/Start.aspx?GUID=1538&ISIFRAME=0&UNIT=1538&PAGE=LOKALBOKNING')
     user_driver.find_element_by_xpath('//*[@id="SiteNavigationWUC_SITENAVIGATION_LOGIN"]').click()

@@ -1,0 +1,212 @@
+1495462144380	geckodriver	INFO	Listening on 127.0.0.1:57665
+1495462145491	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495462158190	Marionette	INFO	Listening on port 34394
+1495462158626	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(svflimex02hhj0q2f1ut41dz))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495462314572	geckodriver	INFO	Listening on 127.0.0.1:32859
+1495462315681	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495462321884	Marionette	INFO	Listening on port 33995
+1495462322061	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495462322835	geckodriver	INFO	Listening on 127.0.0.1:50376
+1495462324004	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(0wfltzgijwtr4ekvelr1gpyx))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495462331913	Marionette	INFO	Listening on port 46620
+1495462332153	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(iritqrit4lchebw30vq1k2sd))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(iritqrit4lchebw30vq1k2sd))/login/TrueLogin.aspx, line 455: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 1422] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tJ4O1e/firefox-53.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 1513] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tJ4O1e/firefox-53.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+1495462446484	geckodriver	INFO	Listening on 127.0.0.1:33060
+1495462447718	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495462460353	Marionette	INFO	Listening on port 34395
+1495462460481	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495462461428	geckodriver	INFO	Listening on 127.0.0.1:34620
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(udp12c224i4ba0hxk3csczt0))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495462462729	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495462469265	Marionette	INFO	Listening on port 35951
+1495462469523	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(j1sjkptcdbmnt050ahxehuxe))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(j1sjkptcdbmnt050ahxehuxe))/login/TrueLogin.aspx, line 455: unreachable code after return statement
+
+(/usr/lib/firefox/firefox:1740): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1017.
+
+
+(/usr/lib/firefox/firefox:1657): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1017.
+
+1495462633309	geckodriver	INFO	Listening on 127.0.0.1:53477
+1495462634468	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495462640063	Marionette	INFO	Listening on port 44985
+1495462640297	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495462641482	geckodriver	INFO	Listening on 127.0.0.1:35618
+1495462642744	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(hodnnzdhpy3mm15gnmvs1dis))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495462649697	Marionette	INFO	Listening on port 43224
+1495462649904	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(jch5wkogcn2klb0t3cm3vysl))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(jch5wkogcn2klb0t3cm3vysl))/login/TrueLogin.aspx, line 455: unreachable code after return statement
+
+(/usr/lib/firefox/firefox:1984): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1017.
+
+[Child 1900] WARNING: pipe error (14): Connection reset by peer: file /build/firefox-tJ4O1e/firefox-53.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+1495462777699	geckodriver	INFO	Listening on 127.0.0.1:50832
+1495462778824	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495462785585	Marionette	INFO	Listening on port 42175
+1495462785752	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495462786708	geckodriver	INFO	Listening on 127.0.0.1:51676
+1495462786891	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(z3d3q3exzcwopugzrshaln2e))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495462794297	Marionette	INFO	Listening on port 40748
+1495462794532	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(v4his2hu23z2w2jddw3vm12v))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(v4his2hu23z2w2jddw3vm12v))/login/TrueLogin.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(v4his2hu23z2w2jddw3vm12v)F(AQLgmSKlHaHUCP7gaatoLqHUCAATcgBqAGEAdgBlAGwAaQBuAGQAQABnAG0AYQBpAGwALgBjAG8AbQAAAS8A_7k7_BFW3QazjK88xQXL3gG-wjmMHiWqFJCuHDMdp0az0))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495462804766	Marionette	INFO	New connections will no longer be accepted
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 2216] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tJ4O1e/firefox-53.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(ad3wn5cvvoz2zmtzrw4uvlaq))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+
+(/usr/lib/firefox/firefox:2132): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1017.
+
+1495463005840	geckodriver	INFO	Listening on 127.0.0.1:39424
+1495463007055	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495463012820	Marionette	INFO	Listening on port 33930
+1495463012973	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495463013790	geckodriver	INFO	Listening on 127.0.0.1:38949
+1495463015207	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(0gl3ib3fwzsbxwl440jdgopo))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495463022835	Marionette	INFO	Listening on port 37666
+1495463022992	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(wqnctv55cfmbx4ofzkwf4kj5))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(wqnctv55cfmbx4ofzkwf4kj5))/login/TrueLogin.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(wqnctv55cfmbx4ofzkwf4kj5)F(AQI6IlEsHqHUCP468tnvLqHUCAATcgBqAGEAdgBlAGwAaQBuAGQAQABnAG0AYQBpAGwALgBjAG8AbQAAAS8A_2VytoaJSjn0bT2EMG2RAMgQWzv1LmQ_E8PAAUaQKzQT0))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495463031426	Marionette	INFO	New connections will no longer be accepted
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 2476] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tJ4O1e/firefox-53.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+
+(/usr/lib/firefox/firefox:2389): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1017.
+
+1495463104145	geckodriver	INFO	Listening on 127.0.0.1:40216
+1495463105243	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495463113245	Marionette	INFO	Listening on port 45790
+1495463113442	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495463114196	geckodriver	INFO	Listening on 127.0.0.1:51987
+1495463115543	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(mdnwrjcu2lqxsjwqonlp1xrj))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495463123472	Marionette	INFO	Listening on port 41291
+1495463123640	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(ve05bwagiqltprl4r21wjhvr))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(ve05bwagiqltprl4r21wjhvr))/login/TrueLogin.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(ve05bwagiqltprl4r21wjhvr)F(AQLYrAdpHqHUCP7YfJAsL6HUCAATcgBqAGEAdgBlAGwAaQBuAGQAQABnAG0AYQBpAGwALgBjAG8AbQAAAS8A__73Q3ucOHrlChAiPMSG-8CXG1rtIjWushRt-uGbi6BX0))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495463133355	Marionette	INFO	New connections will no longer be accepted
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 2701] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tJ4O1e/firefox-53.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+
+(/usr/lib/firefox/firefox:2618): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1017.
+
+1495463237646	geckodriver	INFO	Listening on 127.0.0.1:57337
+1495463238754	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495463243659	Marionette	INFO	Listening on port 36423
+1495463243898	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495463245039	geckodriver	INFO	Listening on 127.0.0.1:47673
+1495463246581	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(ywbzvjdgqnoa31lhbjehwm4s))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495463254494	Marionette	INFO	Listening on port 46568
+1495463254781	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(cwnzf1rcr442criwd4zdakth))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(cwnzf1rcr442criwd4zdakth))/login/TrueLogin.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(cwnzf1rcr442criwd4zdakth)F(AQK0R-i2HqHUCP60F3F6L6HUCAATcgBqAGEAdgBlAGwAaQBuAGQAQABnAG0AYQBpAGwALgBjAG8AbQAAAS8A_wE7Ys6QwhO0oMgTKRT2WDRWNIrqHQp-MpVI9OosmkIP0))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495463263914	Marionette	INFO	New connections will no longer be accepted
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 2927] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tJ4O1e/firefox-53.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+
+(/usr/lib/firefox/firefox:2842): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1017.
+
+1495463413550	geckodriver	INFO	Listening on 127.0.0.1:58280
+1495463414765	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495463420538	Marionette	INFO	Listening on port 41703
+1495463420679	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495463421634	geckodriver	INFO	Listening on 127.0.0.1:50997
+1495463422875	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(nvvkzzqtqbvhcthkzduep2v1))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495463429814	Marionette	INFO	Listening on port 45624
+1495463430164	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(203vatzxtq4n3vucogw1duad))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(203vatzxtq4n3vucogw1duad))/login/TrueLogin.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(203vatzxtq4n3vucogw1duad)F(AQLnHN4fH6HUCP7n7GbjL6HUCAATcgBqAGEAdgBlAGwAaQBuAGQAQABnAG0AYQBpAGwALgBjAG8AbQAAAS8A_3jEZ4tYp4qr3kfwozuQNbNC4DntRixgKgJUkeeop-SY0))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495463439979	Marionette	INFO	New connections will no longer be accepted
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 3172] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tJ4O1e/firefox-53.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+
+(/usr/lib/firefox/firefox:3089): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1017.
+
+1495463597010	geckodriver	INFO	Listening on 127.0.0.1:49817
+1495463598155	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495463602529	Marionette	INFO	Listening on port 36435
+1495463602651	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495463603623	geckodriver	INFO	Listening on 127.0.0.1:55766
+1495463604943	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(buawgh1ksqali4fs0b03zofx))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495463613343	Marionette	INFO	Listening on port 43860
+1495463613622	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(kn5gyk4y1ot1rhwlfvcdgumu))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(kn5gyk4y1ot1rhwlfvcdgumu))/login/TrueLogin.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(kn5gyk4y1ot1rhwlfvcdgumu)F(AQLZlkeNH6HUCP7ZZtBQMKHUCAATcgBqAGEAdgBlAGwAaQBuAGQAQABnAG0AYQBpAGwALgBjAG8AbQAAAS8A_z_aBQK--Pi1e3V7B7WvFhZc870QmERgZK4xkXyY0ULk0))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495463623783	Marionette	INFO	New connections will no longer be accepted
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 3415] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tJ4O1e/firefox-53.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+
+(/usr/lib/firefox/firefox:3328): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1017.
+
+1495463947092	geckodriver	INFO	Listening on 127.0.0.1:42877
+1495463948280	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495463954655	Marionette	INFO	Listening on port 34261
+1495463954808	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495463956075	geckodriver	INFO	Listening on 127.0.0.1:38669
+1495463957353	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(gcp01g4yowbw54w0mgbqqb0n))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495463963527	Marionette	INFO	Listening on port 35114
+1495463963687	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(lu2qntot2cu1yhphdlk5p0hu))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(lu2qntot2cu1yhphdlk5p0hu))/login/TrueLogin.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(lu2qntot2cu1yhphdlk5p0hu)F(AQKqPOpdIKHUCP6qDHMhMaHUCAATcgBqAGEAdgBlAGwAaQBuAGQAQABnAG0AYQBpAGwALgBjAG8AbQAAAS8A_4zN1RiHgFwgiLhde7QrIWYVxCKMagK4_TC7L2MZ-Zm50))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(lu2qntot2cu1yhphdlk5p0hu)F(AQKqPOpdIKHUCP6qDHMhMaHUCAATcgBqAGEAdgBlAGwAaQBuAGQAQABnAG0AYQBpAGwALgBjAG8AbQAAAS8A_4zN1RiHgFwgiLhde7QrIWYVxCKMagK4_TC7L2MZ-Zm50))/booking/UserBookingsForm.aspx, line 455: unreachable code after return statement
+1495463976761	Marionette	INFO	New connections will no longer be accepted
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 3693] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tJ4O1e/firefox-53.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(xjsvahgckcaip5wa1p0tkket))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495464108238	geckodriver	INFO	Listening on 127.0.0.1:52389
+1495464109384	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495464117612	Marionette	INFO	Listening on port 43841
+1495464118061	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(osbvw1ihchfyzdvqtfvhyqv0))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(yemlwsluuv5l4jqoig3ugy2h))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(yemlwsluuv5l4jqoig3ugy2h))/login/TrueLogin.aspx, line 455: unreachable code after return statement
+
+(/usr/lib/firefox/firefox:3610): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1017.
+
+
+(/usr/lib/firefox/firefox:3815): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1017.
+
+1495464233928	geckodriver	INFO	Listening on 127.0.0.1:33939
+1495464235015	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+1495464239988	Marionette	INFO	Listening on port 36704
+1495464240126	Marionette	WARN	TLS certificate errors will be ignored for this session
+1495464240969	geckodriver	INFO	Listening on 127.0.0.1:59447
+1495464242424	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(eie351p1d0nxlvf1c1pbx3t2))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+1495464250813	Marionette	INFO	Listening on port 45496
+1495464251117	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(l2f0y5hpt2rkw2cdrpk5y3fj))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(l2f0y5hpt2rkw2cdrpk5y3fj))/login/TrueLogin.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(l2f0y5hpt2rkw2cdrpk5y3fj)F(AQKxXAkJIaHUCP6xLJLMMaHUCAATcgBqAGEAdgBlAGwAaQBuAGQAQABnAG0AYQBpAGwALgBjAG8AbQAAAS8A_0oK_nj3TAvTwqMs85QxfRC8NwjJZbHt6G6wEHR2wwa10))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(l2f0y5hpt2rkw2cdrpk5y3fj)F(AQKxXAkJIaHUCP6xLJLMMaHUCAATcgBqAGEAdgBlAGwAaQBuAGQAQABnAG0AYQBpAGwALgBjAG8AbQAAAS8A_0oK_nj3TAvTwqMs85QxfRC8NwjJZbHt6G6wEHR2wwa10))/booking/UserBookingsForm.aspx, line 455: unreachable code after return statement
+1495464262833	Marionette	INFO	New connections will no longer be accepted
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 4039] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tJ4O1e/firefox-53.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 346
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(rcv51250neqkbv1p1xgrpqhm))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+JavaScript warning: https://v7003-profitwebsite.pastelldata.com/(S(4irv5tlji5wxbhoc1ueyz1vm))/treatment/TreatmentBook.aspx, line 455: unreachable code after return statement
+
+(/usr/lib/firefox/firefox:3950): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1017.
+
