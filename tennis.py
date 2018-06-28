@@ -8,7 +8,6 @@ from threading import Lock, Thread
 from flask import Flask, request, Response, render_template
 from multiprocessing import Queue
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-from pyvirtualdisplay import Display
 
 current_avaliable_bookings = defaultdict(list)
 last_bookings_update = None
@@ -21,17 +20,12 @@ users.append({'nick':'hoff', 'username':'daniel.angelhoff@gmail.com', 'password'
 binary = FirefoxBinary('/usr/bin/firefox')
 
 def create_driver():
-    #return webdriver.Chrome()
-    #return webdriver.Firefox(firefox_binary=binary)
     #return webdriver.Firefox()
-
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
     options.add_argument('window-size=1200x600')
     return webdriver.Chrome(chrome_options=options)
 
-#display = Display(visible=0, size=(800, 600))
-#display.start()
 
 def get_lane_name_by_id(laneID):
     if int(laneID) > 80:
@@ -154,15 +148,18 @@ def refresh_user_bookings():
             continue
         cancel_links = user_driver.find_elements_by_xpath('//td[@class="ResBookingsTableCellDebookAllowed"]')
         for link in cancel_links:
-            url = link.find_element_by_xpath('a').get_attribute('href')
-            if link.text == 'Avboka':
-                elem = link.find_element_by_xpath('preceding-sibling::td[@class="table_cell"]')
-                datetime = elem.text
-                laneinfo = elem.find_element_by_xpath('following-sibling::td').text
-                m = re.search(r'-\s(\d+|Grus(?:tennis) \d{1})?', laneinfo)
-                lane = m.group(1).strip().replace("tennis", "")
-                new_user_bookings.append({'nick':user['nick'], 'datetime':datetime, 'lane':lane, 'link':url, 'bookid':str(bookid)})
-                bookid += 1
+            try:
+                url = link.find_element_by_xpath('a').get_attribute('href')
+                if link.text == 'Avboka':
+                    elem = link.find_element_by_xpath('preceding-sibling::td[@class="table_cell"]')
+                    datetime = elem.text
+                    laneinfo = elem.find_element_by_xpath('following-sibling::td').text
+                    m = re.search(r'-\s(\d+|Grus(?:tennis) \d{1})?', laneinfo)
+                    lane = m.group(1).strip().replace("tennis", "")
+                    new_user_bookings.append({'nick':user['nick'], 'datetime':datetime, 'lane':lane, 'link':url, 'bookid':str(bookid)})
+                    bookid += 1
+            except:
+                continue
         user_driver.quit()
     userbookings = new_user_bookings
 
